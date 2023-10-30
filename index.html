@@ -18,25 +18,66 @@
   <link rel="stylesheet" href="./dist/style.css">
 </head>
 
-<body class="font-redHat">
-  Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.
+<body class="font-redHat flex justify-center w-full h-full min-h-screen overflow-hidden">
+  <div class="wrapper bg-customBackGround flex flex-col items-center w-full h-full min-h-screen max-w-[1440px]">
+    <div class="logo mt-12">
+      <img src="./dist/assets/logo.svg" alt="">
+    </div>
+    <div class="header mt-[54px] grid grid-cols-3 relative w-full justify-items-center">
+      <div class="header-img-left xl:flex relative left-[-4vw] hidden">
+        <img src="./dist/assets/desktop/image-hero-left.png" alt="" class="object-contain">
+      </div>
+      <div class="header-img w-[110%] md:w-[107%] col-span-full xl:hidden flex justify-center">
+        <img src="./dist/assets/tablet/image-hero.png" alt="" class="">
+      </div>
+      <div class="header-img-right xl:flex hidden">
+        <img src="./dist/assets/desktop/image-hero-right.png" alt="" class="object-contain ml-[8vw]">
+      </div>
+      <div
+        class="header-text col-span-full px-6 xl:px-0 mt-[72px] flex flex-col items-center xl:col-start-2 xl:col-end-3 xl:row-start-1 xl:mt-[54px] xl:w-[540px]">
+        <h1
+          class="text-[40px] font-black text-center leading-[44px] xl:leading-[64px] text-customTextDark px-6 xl:text-[64px] xl:px-10">
+          Group Chat
+          for Everyone
+        </h1>
+        <p class="text-customTextLight mt-6 text-center leading-[26px] xl:text-[18px]">Meet makes it easy to connect
+          with others
+          face-to-face
+          virtually and collaborate
+          across
+          any device.</p>
 
-  Download v1.3
-  What is it?
+        <div class="header-buttons xl:flex-row flex flex-col items-center gap-4 mt-8">
+          <button class="text-white leading-[26px] bg-customPrimary px-10 py-4 rounded-full">Download <span
+              class="text-customTextBlue">v1.3</span></button>
+          <button class="text-white leading-[26px] bg-customSecondary px-7 py-4 rounded-full">What is it?</button>
+        </div>
 
-  01
-  Built for modern use
 
-  Smarter meetings, all in one place
+      </div>
 
-  Send messages, share files, show your screen, and record your meetings — all in one
-  workspace. Control who can join with invite-only team access, data encryption, and data export.
+    </div>
 
-  02
-  Experience more together
-  Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+    <div class="section-number mt-[64px]">
+      <p class="text-customTextLight leading-[26px] w-14 h-14 border flex justify-center items-center rounded-full">
+        01</p>
+    </div>
 
-  Download v1.3
+
+
+    Built for modern use
+
+    Smarter meetings, all in one place
+
+    Send messages, share files, show your screen, and record your meetings — all in one
+    workspace. Control who can join with invite-only team access, data encryption, and data export.
+
+    02
+    Experience more together
+    Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
+
+    Download v1.3
+  </div>
 </body>
 
 </html>
