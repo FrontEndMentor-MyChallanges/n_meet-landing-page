@@ -27,6 +27,10 @@ Users should be able to:
 
 ### Screenshot
 
+![](./dist/images/desktop.jpg)
+![](./dist/images/tablet.jpg)
+![](./dist/images/mobile.jpg)
+
 ### Links
 
 - Solution URL: [Code](https://github.com/FrontEndMentor-MyChallanges/n_meet-landing-page)
