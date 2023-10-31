@@ -18,25 +18,32 @@
   <link rel="stylesheet" href="./dist/style.css">
 </head>
 
-<body class="font-redHat flex justify-center w-full h-full min-h-screen overflow-hidden">
-  <div class="wrapper bg-customBackGround flex flex-col items-center w-full h-full min-h-screen max-w-[1440px]">
+<body class="font-redHat flex justify-center w-full h-full min-h-screen overflow-x-hidden">
+
+  <!-- Main Wrapper -->
+  <div
+    class="wrapper bg-customBackGround flex flex-col items-center justify-center w-full h-full min-h-screen max-w-[1440px] overflow-x-hidden">
+
+    <!-- Logo -->
     <div class="logo mt-12">
       <img src="./dist/assets/logo.svg" alt="">
     </div>
-    <div class="header mt-[54px] grid grid-cols-3 relative w-full justify-items-center">
+
+    <!-- Header -->
+    <header class="header mt-[54px] md:mt-16 grid grid-cols-3 relative w-screen justify-items-center">
       <div class="header-img-left xl:flex relative left-[-4vw] hidden">
         <img src="./dist/assets/desktop/image-hero-left.png" alt="" class="object-contain">
       </div>
-      <div class="header-img w-[110%] md:w-[107%] col-span-full xl:hidden flex justify-center">
+      <div class="header-img w-[110%] md:w-[107%] col-span-full xl:hidden  flex justify-center">
         <img src="./dist/assets/tablet/image-hero.png" alt="" class="">
       </div>
       <div class="header-img-right xl:flex hidden">
         <img src="./dist/assets/desktop/image-hero-right.png" alt="" class="object-contain ml-[8vw]">
       </div>
       <div
-        class="header-text col-span-full px-6 xl:px-0 mt-[72px] flex flex-col items-center xl:col-start-2 xl:col-end-3 xl:row-start-1 xl:mt-[54px] xl:w-[540px]">
+        class="header-text col-span-full px-6 xl:px-0 mt-12 md:mt-[72px] flex flex-col items-center xl:col-start-2 xl:col-end-3 xl:row-start-1 xl:mt-[54px] xl:w-[540px] w-full max-w-[460px]">
         <h1
-          class="text-[40px] font-black text-center leading-[44px] xl:leading-[64px] text-customTextDark px-6 xl:text-[64px] xl:px-10">
+          class="text-[40px] md:leading-[48px] md:text-5xl font-black text-center leading-[44px] xl:leading-[64px] text-customTextDark px-6 xl:text-[64px] xl:px-10">
           Group Chat
           for Everyone
         </h1>
@@ -47,7 +54,7 @@
           across
           any device.</p>
 
-        <div class="header-buttons xl:flex-row flex flex-col items-center gap-4 mt-8">
+        <div class="header-buttons md:flex-row flex flex-col items-center gap-4 mt-8">
           <button class="text-white leading-[26px] bg-customPrimary px-10 py-4 rounded-full">Download <span
               class="text-customTextBlue">v1.3</span></button>
           <button class="text-white leading-[26px] bg-customSecondary px-7 py-4 rounded-full">What is it?</button>
@@ -56,28 +63,85 @@
 
       </div>
 
-    </div>
+    </header>
 
-    <div class="section-number mt-[64px]">
-      <p class="text-customTextLight leading-[26px] w-14 h-14 border flex justify-center items-center rounded-full">
+    <!-- Section divider -->
+    <div class="section-divider mt-[64px] md:mt-20 relative mx-auto">
+      <div class="h-[84px] border-l-[1px] relative left-1/2 -translate-x-[1px]"></div>
+      <p
+        class="text-customTextLight leading-[26px] font-black w-14 h-14 border flex justify-center items-center rounded-full mx-auto">
         01</p>
     </div>
 
+    <!-- About us section -->
+    <section class="about px-6 md:px-10 mt-[104px] md:mt-[68px] w-full flex flex-col items-center">
+      <div class="gallery grid grid-cols-[repeat(auto-fit,minmax(150px,1fr))] gap-6 w-full ">
+        <img src="./dist/assets/desktop/image-woman-in-videocall.jpg" alt="" class="w-full rounded-lg">
+        <img src="./dist/assets/desktop/image-women-videochatting.jpg" alt="" class="w-full rounded-lg">
+        <img src="./dist/assets/desktop/image-men-in-meeting.jpg" alt="" class="w-full rounded-lg">
+        <img src="./dist/assets/desktop/image-man-texting.jpg" alt="" class="w-full rounded-lg">
+      </div>
 
+      <article class="about-article text-center mt-[22px] md:mt-12 md:max-w-[580px] max-w-[375px]">
+        <p class="text-customPrimary font-black leading-[26px] tracking-[4px] uppercase">Built for modern use</p>
+        <h2 class="text-[32px] md:text-[40px] leading-9 md:leading-[44px] font-black mt-6 md:px-16">Smarter meetings,
+          all in one
+          place</h2>
+        <p class="leading-[26px] font-medium text-customTextLight mt-8 tracking-normal break-keep">Send messages,
+          share files,
+          show
+          your screen,
+          and
+          record your meetings —
+          all in one
+          workspace. Control who can join with invite-only team access, data encryption, and data export.</p>
+      </article>
+    </section>
 
-    Built for modern use
+    <!-- Section divider -->
+    <div class="section-divider mt-[64px] md:mt-20 relative mx-auto z-20">
+      <div class="h-[84px] border-l-[1px] relative left-1/2 -translate-x-[1px]"></div>
+      <p
+        class="text-customTextLight leading-[26px] font-black w-14 h-14 border flex justify-center items-center rounded-full mx-auto bg-white">
+        02</p>
+    </div>
 
-    Smarter meetings, all in one place
-
-    Send messages, share files, show your screen, and record your meetings — all in one
-    workspace. Control who can join with invite-only team access, data encryption, and data export.
-
-    02
-    Experience more together
-    Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.
-
-    Download v1.3
+    <!-- Footer -->
+    <footer class="footer -mt-7 bg-customPrimary relative flex justify-center w-full h-auto px-6 pb-[72px]">
+      <div class="bg-customPrimary opacity-[0.12] absolute w-full h-full">
+        <img src="./dist/assets/mobile/image-footer.jpg" alt="" class="object-cover w-full h-full">
+      </div>
+      <div class="z-10 flex flex-col items-center md:max-w-[580px] max-w-[375px]">
+        <h2
+          class="mt-[92px] text-[32px] md:px-10 md:text-[40px] leading-9 text-center text-customBackGround font-black">
+          Experience more
+          together</h2>
+        <p class="text-customBackGround mt-6 md:mt-8 text-lg text-center leading-[26px]">Stay connected with reliable HD
+          meetings and unlimited
+          one-on-one and group
+          video
+          sessions.
+        </p>
+        <button
+          class="text-white leading-[26px] bg-customSecondary px-10 md:px-[66px] py-4 rounded-full mt-8 md:mt-10">Download
+          <span class="text-customTextBlue">v1.3</span>
+        </button>
+      </div>
+    </footer>
   </div>
 </body>
 
 </html>
+
+<!-- 
+ <div class="footer-description flex items-stretch w-full text-center z-[10] -mt-7">
+        <div class=" relative flex flex-col w-full">
+          <picture class="bg-image absolute top-0 left-0 z-[-10]">
+            <source media="(min-width:768px)" srcset="./dist/assets/tablet/image-footer.jpg">
+            <img src="./dist/assets/mobile/image-footer.jpg" alt="h-auto">
+          </picture>
+          
+        </div>
+      </div>
+      
+    -->
